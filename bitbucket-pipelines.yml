@@ -1,0 +1,10 @@
+image: docksal/bitbucket-pipelines-agent
+
+pipelines:
+  default:
+    - step:
+        script:
+          # Initialize agent and remote environment
+          - source build-env && build-init
+          # Run fin init on the remote docker host
+          - ssh docker-host "cd $REMOTE_BUILD_DIR && fin init"

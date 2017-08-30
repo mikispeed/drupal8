@@ -31,6 +31,11 @@
     "config": {
         "sort-packages": true
     },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
     "scripts": {
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "pre-install-cmd": [
@@ -52,7 +57,7 @@
             "docroot/libraries/{$name}": ["type:drupal-library"],
             "docroot/modules/contrib/{$name}": ["type:drupal-module"],
             "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+            "docroot/themes/contrib/{$name}": ["type:drupal-theme"]
         }
     }
 }
