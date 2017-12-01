@@ -11,6 +11,7 @@ docker-compose.yml
 /docroot/themes/contrib/
 /docroot/profiles/contrib/
 /docroot/libraries/
+/tests/behat/vendor/
 
 # Ignore sensitive information
 /docroot/sites/*/settings.php
