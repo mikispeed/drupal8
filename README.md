@@ -1,6 +1,6 @@
-# Docksal powered Drupal 8 Installation
+# Docksal powered Drupal 8 Composer Based Installation
 
-This is a sample vanilla Drupal 8 installation pre-configured for use with Docksal.  
+This is a sample vanilla Drupal 8 installation pre-configured for use with Docksal and Composer.  
 
 Features:
 
@@ -20,13 +20,13 @@ Follow [Docksal environment setup instructions](http://docksal.readthedocs.io/en
 1. Clone this repo into your Projects directory
 
     ```
-    git clone https://github.com/docksal/drupal8.git
-    cd drupal8
+    git clone https://github.com/mikispeed/drupal8-composer.git
+    cd drupal8-composer
     ```
 
 2. Initialize the site
 
-    This will initialize local settings and install the site via drush
+    This will initialize local settings, download code via composer and install the site via drush
 
     ```
     fin init
@@ -54,3 +54,6 @@ Some common tasks that can be handled by the init script:
 - compile Sass
 - run DB updates, revert features, clear caches, etc.
 - enable/disable modules, update variables values
+
+## Customize
+Explore [.docksal/docksal.env](.docksal/docksal.env) for further customization (most notably virtual host change).
